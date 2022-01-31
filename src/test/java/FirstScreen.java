@@ -35,8 +35,8 @@ public class FirstScreen {
         Assert.assertEquals("Test",name);
 
 
-        elementEmail = driver.findElement(By.xpath("//*[@placeholder=\"מייל\"]")).sendKeys("test1001@gmail.com"); //
-        elementEmail.sendKeys();
+        elementEmail = driver.findElement(By.xpath("//*[@placeholder=\"מייל\"]")); //
+        elementEmail.sendKeys("test1001@gmail.com");
         String mail = elementEmail.getAttribute("value");
         Assert.assertEquals("test1001@gmail.com",mail);
 
