@@ -35,10 +35,10 @@ public class FirstScreen {
         Assert.assertEquals("Test",name);
 
 
-        driver.findElement(By.xpath("//*[@placeholder=\"מייל\"]")).sendKeys("test1001@gmail.com"); //
-        elementName.sendKeys();
-        String mail = elementName.getAttribute("value");
-        Assert.assertEquals("test1001@gmail.com",name);
+        elementEmail = driver.findElement(By.xpath("//*[@placeholder=\"מייל\"]")).sendKeys("test1001@gmail.com"); //
+        elementEmail.sendKeys();
+        String mail = elementEmail.getAttribute("value");
+        Assert.assertEquals("test1001@gmail.com",mail);
 
 
         driver.findElement(By.xpath("//*[@id=\"valPass\"]")).sendKeys("Welcome1!"); //'Password' field//
